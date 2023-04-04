@@ -26,3 +26,11 @@ def capitalize(a: str):
     return ' '.join(upper)
 
 print(capitalize('hello, i am learning python!'))
+
+
+# zip() function in Python
+#The function combines the two lists into pairs of tuples.
+def make_tuples(a, b):
+    a = zip(a, b)
+    return list(tuple(a))
+print(make_tuples([1, 2, 3], [4, 5, 6]))
