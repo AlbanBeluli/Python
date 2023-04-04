@@ -1,3 +1,5 @@
+#just some randoms def I wrote have fun using them
+
 def count_words(arr: str):
     words = []
     for word in arr.split():
@@ -49,3 +51,17 @@ def average_calories():
     return sum(scores) / len(scores)
 
 print(average_calories())
+
+
+
+
+#Is this how Yoda speaks?
+string1 = "I like coding in Python"
+
+def read_backwards(n: str) -> str:
+    x = []
+    for i in n.split()[::-1]:
+        x.append(i)
+
+    return " ".join(x)
+print(read_backwards(string1))
