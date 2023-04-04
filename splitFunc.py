@@ -14,3 +14,15 @@ def count_characters(a):
     return f'The string has ' \
            f'{len(a)} elements '
 print(count_characters('I love learning'))
+
+
+def capitalize(a: str):
+    upper = []
+    for i, word in enumerate(a.split()):
+        if word[0].islower():
+            upper.append(word.capitalize())
+        else:
+            upper.append(word)
+    return ' '.join(upper)
+
+print(capitalize('hello, i am learning python!'))
