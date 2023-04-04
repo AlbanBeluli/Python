@@ -34,3 +34,18 @@ def make_tuples(a, b):
     a = zip(a, b)
     return list(tuple(a))
 print(make_tuples([1, 2, 3], [4, 5, 6]))
+
+
+
+
+def average_calories():
+    scores = []
+    while True:
+        score = input("Enter calories burned or enter done to quit: ")
+        if score == "done":
+            break
+        else:
+            scores.append(int(score))
+    return sum(scores) / len(scores)
+
+print(average_calories())
